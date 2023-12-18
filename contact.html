@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    - primary meta tags
+  -->
+  <title>Inès | Contact</title>
+  <meta name="title" content="Ines | Contact">
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./img/butterfly.svg" type="image/svg+xml">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./css/require.css">
+  <link rel="stylesheet" href="./css/pages/contact.css">
+
+</head>
+
+<body>
+
+  <!-- 
+    - #PRELOADER
+  -->
+
+  <div class="preloader" data-preloader>
+    <div class="preloader-circle"></div>
+  </div>
+
+
+
+
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="./index.html" class="logo">
+        <img src="./img/logo1.png" width="151" height="28" alt="Ines home">
+      </a>
+
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="./index.html" class="label-lg navbar-link has-after">Home</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="./service.html" class="label-lg navbar-link has-after">Service</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="./education.html" class="label-lg navbar-link has-after">Education</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#" class="label-lg navbar-link has-after active">Contact</a>
+          </li>
+
+        </ul>
+      </nav>
+
+      <a href="./contact.html" class="btn btn-primary">Contact Now</a>
+
+      <button class="nav-toggle-btn" aria-label="menu" data-nav-toggler>
+        <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+      </button>
+
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+      <h1>Contact form</h1>
+      <!-- 
+        - #CONTACT
+      -->
+
+      <section class="section contact has-bg-image" aria-labelledby="contact-label"
+        style="background-image: url('./img/contact-bg.png')">
+        <div class="container">
+
+          <form id="contactForm" action="/submit-form" class="contact-form" novalidate onsubmit="return validateForm()">
+
+            <h2 class="headline-sm" id="contact-label">Get in touch</h2>
+
+            <p class="contact-text body-md">
+              I would love to hear from you.
+            </p>
+
+            <div class="wrapper">
+
+              <div>
+                <label for="name" class="label">First name</label>
+
+                <input type="text" name="name" id="name" placeholder="Name *" required class="input-field">
+              </div>
+
+              <div>
+                <label for="email" class="label">Your Email </label>
+
+                <input type="email" name="email" id="email" placeholder="Email *" required class="input-field">
+              </div>
+
+            </div>
+
+            <label for="subject" class="label">Subject</label>
+            <input type="text" name="subject" id="subject" placeholder="Subject *" class="input-field">
+
+            <label for="message" class="label">Your message </label>
+            <textarea name="message" id="message" placeholder="Your message *" required class="input-field"></textarea>
+
+            <button id="submitButton" type="submit" class="btn btn-tertiary">Send Message</button>
+
+          </form>
+
+          <div class="contact-content">
+
+            <ul class="contact-list">
+
+              <li class="contact-item">
+
+                <div class="item-icon" style="background-color: #1B4242">
+                  <ion-icon name="call" aria-hidden="true"></ion-icon>
+                </div>
+
+                <div>
+                  <p class="label-lg">Phone</p>
+
+                  <a href="tel:+21699645180" class="body-lg">+216 99 645 180</a>
+                </div>
+
+              </li>
+
+              <li class="contact-item">
+
+                <div class="item-icon" style="background-color: #5C8374">
+                  <ion-icon name="mail" aria-hidden="true"></ion-icon>
+                </div>
+
+                <div>
+                  <p class="label-lg">Mail</p>
+
+                  <a href="tel:ines.mrad@esprit.tn" class="body-lg">ines.mrad@esprit.tn</a>
+                </div>
+
+              </li>
+
+              <li class="contact-item">
+
+                <div class="item-icon" style="background-color: #9EC8B9">
+                  <ion-icon name="location" aria-hidden="true"></ion-icon>
+                </div>
+
+                <div>
+                  <p class="label-lg">Where you can find me</p>
+
+                  <address class="body-lg">
+                    lot 13, V5XR+M37 Résidence Essalem II, 
+                    Av. Fethi Zouhir, Cebalat Ben Ammar 2083
+                  </address>
+                </div>
+
+              </li>
+
+            </ul>
+
+          </div>
+
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+    <div class="container">
+
+      <ul class="social-list">
+
+        <li>
+          <a href="https://www.facebook.com/profile.php?id=100007331928288" class="social-link">
+            <ion-icon name="logo-facebook"></ion-icon>
+          </a>
+        </li>
+
+        <li>
+          <a href="https://github.com/inesmrad11" class="social-link">
+            <ion-icon name="logo-github"></ion-icon>
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="social-link">
+            <ion-icon name="logo-instagram"></ion-icon>
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="social-link">
+            <ion-icon name="logo-linkedin"></ion-icon>
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="social-link">
+            <ion-icon name="logo-pinterest"></ion-icon>
+          </a>
+        </li>
+
+      </ul>
+      <p class="text-center">
+        Built with 	&#10084; By Inès Mrad in Tunis, Tunisia.
+      </p>
+
+    </div>
+  </footer>
+
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./js/function_min.js"></script>
+
+  <!-- 
+    - ionicon
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
